@@ -1,0 +1,13 @@
+package com.motivtiy.hotel.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Hotel {
+	
+	private String id;
+	private String name;
+	private String location;
+	private String about;
+
+}

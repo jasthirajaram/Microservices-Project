@@ -1,2 +1,2 @@
 # Microservices-Project
-Projects on Microservices
+This is a project on microservices  - Hotel Service

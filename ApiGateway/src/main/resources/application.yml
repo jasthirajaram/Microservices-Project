@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+      - id: UserService
+        uri: lb://USER-SERVICE
+        predicates:
+        - Path= /users/**
+      - id: HotelService
+        uri: lb://HOTEL-SERVICE
+        predicates:
+        - Path= /hotel/**
+      - id: RatingService
+        uri: lb://RATING-SERVICE
+        predicates:
+        - Path= /rating/**
+          
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true

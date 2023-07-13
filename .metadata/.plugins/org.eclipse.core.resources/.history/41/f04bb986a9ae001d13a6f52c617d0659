@@ -1,0 +1,5 @@
+package com.motivtiy.hotel.entities;
+
+public class Hotel {
+
+}

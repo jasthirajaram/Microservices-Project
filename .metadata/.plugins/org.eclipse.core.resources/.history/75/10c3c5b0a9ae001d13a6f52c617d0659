@@ -1,0 +1,10 @@
+package com.motivtiy.hotel.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Hotel {
+	
+	
+
+}
